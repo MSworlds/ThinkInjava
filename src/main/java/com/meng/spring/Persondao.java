@@ -15,28 +15,28 @@ public class Persondao {
 //    创建Student对象
 //    传统方法创建
 public static  void  creatPerson(){
-    Resource re =new ClassPathResource("applicationContext.xml");
+    Resource re =new ClassPathResource("Spring/applicationContext.xml");
     BeanFactory beanfaction=new XmlBeanFactory(re);
     Person p=(Person)beanfaction.getBean("person");
     System.out.println(p);
 }
     public static  void  creatPerson1(){
-        ApplicationContext ac=new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext ac=new ClassPathXmlApplicationContext("Spring/applicationContext.xml");
         Person p=(Person)ac.getBean("person1");
         System.out.println(p);
     }
     public static  void  creatPerson2(){
-        ApplicationContext ac=new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext ac=new ClassPathXmlApplicationContext("Spring/applicationContext.xml");
         Person p=(Person)ac.getBean("person2");
         System.out.println(p);
     }
     public static  void  creatPerson3(){
-        ApplicationContext ac=new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext ac=new ClassPathXmlApplicationContext("Spring/applicationContext.xml");
         Person p=(Person)ac.getBean("person3");
         System.out.println(p);
     }
     public static  void  creatPerson4(){
-        ApplicationContext ac=new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext ac=new ClassPathXmlApplicationContext("Spring/applicationContext.xml");
         Person p=(Person)ac.getBean("person4");
         System.out.println(p);
     }
