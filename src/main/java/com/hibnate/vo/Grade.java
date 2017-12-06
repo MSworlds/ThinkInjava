@@ -1,17 +1,14 @@
 package com.hibnate.vo;
 
-import javax.security.auth.Subject;
-import java.util.List;
 import java.util.Set;
 
 /**
- * Created by Administrator on 2017/12/5.
+ * Created by Administrator on 2017/12/6.
  */
-public class Teacher {
+public class Grade {
     private  Integer id;
-    private  String name;
-    private String subject;
-
+    private String name;
+    private Set<Teacher> teacher;
 
     public Integer getId() {
         return id;
@@ -29,14 +26,11 @@ public class Teacher {
         this.name = name;
     }
 
-    public String getSubject() {
-        return subject;
+    public Set<Teacher> getTeacher() {
+        return teacher;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setTeacher(Set<Teacher> teacher) {
+        this.teacher = teacher;
     }
-
-
-
 }

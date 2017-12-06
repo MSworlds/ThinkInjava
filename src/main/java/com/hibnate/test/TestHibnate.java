@@ -24,15 +24,16 @@ public class TestHibnate {
         // 开启事务
         Transaction tx = session.beginTransaction();
         //保存-数据库
-Student stuq=new  Student();
+/*Student stuq=new  Student();
         stuq.setName("meng");
         stuq.setSex(1);
-session.save(stuq);
-Student stu= (Student) session.get(Student.class,1);
+session.save(stuq);*/
+Student stu= (Student) session.get(Student.class,7);
         Set<String> adress=new HashSet<String>();
         adress.add("安徽");
         adress.add("合肥");
         stu.setAdress(adress);
+
 
 
         List<String> adress2=new ArrayList<String>();
@@ -43,7 +44,7 @@ Student stu= (Student) session.get(Student.class,1);
 
         Map<String,String> adress3=new HashMap<String, String>();
         adress3.put("家","新加坡");
-        adress3.put("公司","D$");
+        adress3.put("公司","Daaaa");
 
         stu.setAdress3(adress3);
 

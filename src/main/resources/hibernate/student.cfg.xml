@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-mapping PUBLIC
-    "-//Hibernate/Hibernate Configuration DTD//EN"
-    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="com.hibnate.vo">
-<class name="Student" table="student">
+<class name="Student" table="student" >
     <id name="id" column="id"  type="java.lang.Integer" >
         <generator class="identity"></generator>
     </id>
@@ -25,6 +25,7 @@
         <map-key type="java.lang.String" column="weizhi"></map-key>
         <element column="adress" type="java.lang.String" ></element>
     </map>
+    <many-to-one name="teacher" column="t_id" class="Teacher"></many-to-one>
  </class>
 
 </hibernate-mapping>

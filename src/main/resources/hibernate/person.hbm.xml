@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.hibnate.onetoone">
+<!--表-类  -->
+<class name="Person" table="person">
+<!--主键映射  -->
+<id name="id" column="id"><generator class="native"/></id>
+<!--非主键  -->
+<property name="username" column="username "></property>
+
+<one-to-one name="Idcade"  class="Idcade"></one-to-one>
+
+
+</class>
+</hibernate-mapping>

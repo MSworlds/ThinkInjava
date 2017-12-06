@@ -16,6 +16,15 @@ public class Student {
     private Set<String> adress;
     private List<String> adress2;
     Map<String,String> adress3;
+    private  Teacher teacher;
+
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
 
     public Map<String, String> getAdress3() {
         return adress3;

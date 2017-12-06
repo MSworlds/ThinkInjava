@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.hibnate.Mtomany2">
+<!--表-类  -->
+<class name="Yuangong" table="yuangong">
+<!--主键映射  -->
+<id name="deptNo" column="id"><generator class="native"/></id>
+<!--非主键  -->
+<property name="name" column="usernname"></property>
+
+ <!-- <set name="trans"  inverse="true"  >
+		 	 <key column="bumenId"></key>
+		 	 <one-to-many  class="trans"/>
+		 </set>-->
+
+</class>
+</hibernate-mapping>

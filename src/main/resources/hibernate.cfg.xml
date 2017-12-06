@@ -10,9 +10,17 @@
     <property name="connection.password">will</property>
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hbm2ddl.auto">update</property> -->
-      <property name="hbm2ddl.auto">create</property>
+      <property name="hbm2ddl.auto">update</property>
       <property name="hibernate.show_sql">true</property>
       <mapping resource="hibernate/student.cfg.xml"/>
+    <mapping resource="hibernate/teacher.cfg.xml"/>
+    <mapping resource="hibernate/grade.cfg.xml"/>
+    <mapping resource="hibernate/bumen.hbm.xml"></mapping>
+    <mapping resource="hibernate/yuangong.hbm.xml"></mapping>
+    <mapping resource="hibernate/trans.hbm.xml"></mapping>
+    <mapping resource="hibernate/person.hbm.xml"></mapping>
+    <mapping resource="hibernate/idcade.hbm.xml"></mapping>
+
 
   </session-factory>
 
