@@ -17,6 +17,7 @@ public class TestQuery {
         // 创建session的工厂对象
         SessionFactory sf = config.buildSessionFactory();
         // 创建session (代表一个会话，与数据库连接的会话)
+
         Session session = sf.openSession();
         // 开启事务
         Transaction tx = session.beginTransaction();
