@@ -3,7 +3,12 @@
   <groupId>com.meng</groupId>
   <artifactId>ThinkInjava</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <modules>
+    <module>../RPC</module>
+    <module>../RPC</module>
+    <module>../MVC</module>
+  </modules>
+  <packaging>pom</packaging>
   <build/>
   <dependencies>
     <!-- https://mvnrepository.com/artifact/junit/junit -->
