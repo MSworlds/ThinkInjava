@@ -12,8 +12,8 @@ public class TestQuartz {
     public static void main(String[] args) throws SchedulerException, InterruptedException {
 
 
-//        sim();
-        con();
+        sim();
+//        con();
     }
 
     public static void sim() throws SchedulerException {
