@@ -22,18 +22,33 @@ public class TestMangtoone {
         Transaction tx = session.beginTransaction();
         //保存-数据库
 
-        Student stu=new Student();
+     /*   Student stu=new Student();
         stu.setSex(1);
-        stu.setName("nihao");
+        stu.setName("张三");
+        Student stu1=new Student();
+        stu1.setSex(1);
+        stu1.setName("李四");
+        Student stu2=new Student();
+        stu2.setSex(1);
+        stu2.setName("王五");
         Teacher teacher=new Teacher();
-        teacher.setName("laoshji");
+        teacher.setName("老王");
         teacher.setSubject("数学");
         stu.setTeacher(teacher);
+        stu1.setTeacher(teacher);
+        stu2.setTeacher(teacher);
         session.save(teacher);
         session.save(stu);
+        session.save(stu1);
+        session.save(stu2);
 
-
-
+*/
+        //查询
+        Teacher teacher=new Teacher();
+        teacher.setId(7);
+        teacher=(Teacher)session.load(teacher.getClass(),1);
+       /* System.out.println(teacher.getSubject());*/
+        System.out.println(teacher.getStus());
 
 
         // 提交事务

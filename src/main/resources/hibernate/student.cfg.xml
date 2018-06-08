@@ -25,7 +25,7 @@
         <map-key type="java.lang.String" column="weizhi"></map-key>
         <element column="adress" type="java.lang.String" ></element>
     </map>
-    <many-to-one name="teacher" column="t_id" class="Teacher"></many-to-one>
+    <many-to-one name="teacher" column="t_id" class="Teacher" ></many-to-one>
  </class>
 
 </hibernate-mapping>

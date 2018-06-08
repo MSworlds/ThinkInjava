@@ -10,8 +10,12 @@
     </id>
     <property name="name" type="java.lang.String" column="name"></property>
     <property name="subject" type="java.lang.String" column="subject"></property>
+<set name="stus">
+    <key column="t_id"></key>
+    <one-to-many  class="Student"/>
+</set>
 
-    
- </class>
+
+</class>
 
 </hibernate-mapping>

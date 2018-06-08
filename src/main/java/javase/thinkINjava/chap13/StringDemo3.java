@@ -1,6 +1,9 @@
 package javase.thinkINjava.chap13;
 
 import java.util.Arrays;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by Administrator on 2018/3/7.
@@ -21,5 +24,10 @@ public class StringDemo3 {
 
         /*正则*/
         System.out.println("-1234".matches("-\\d+"));
+        Matcher m= Pattern.compile("-\\d+").matcher("-1");
+        System.out.println(m.find());
+     Scanner sc=new Scanner(System.in);
+     System.out.println("请输入一个数");
+     System.out.println(sc.next());
     }
 }
